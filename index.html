@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Inventario</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manejo de Inventario</h1>
+
+    <h2>Agregar nuevo elemento</h2>
+    <form id="inventory-form">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="quantity">Cantidad:</label><br>
+        <input type="number" id="quantity" name="quantity"><br>
+        <input type="submit" value="Agregar">
+    </form>
+
+    <h2>Inventario actual</h2>
+    <table id="inventory-table">
+        <tr>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+        </tr>
+    </table>
+
+    <script src="index.ts"></script>
+</body>
+</html>
